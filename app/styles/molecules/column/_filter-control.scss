@@ -1,0 +1,70 @@
+.filter-control{
+    margin-bottom:  20px;
+  .filter-form{
+    overflow: hidden;
+    input{
+      min-width: 50%;
+      float: left;
+      border:         1px solid #B2B2B2;
+      border-radius: 3px 0px 0px 3px;
+      padding: 3px 3px;
+      border-right: 0;
+    }
+    button{
+      background: #FC6E51;
+      border-radius: 0 3px 3px 0;
+      border: 0;
+      color: #fff;
+      float: left;
+      padding: 4px 6px;
+
+    }
+
+  }
+  .filter-body{
+    position: relative;
+  }
+  .filter-content{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 4px 10px 10px 10px;
+    z-index: 1;
+    box-shadow: 5px 3px 7px 0px #D0D0D0;
+    //display: none;
+    input[type="text"]{
+      width: 100%;
+      border: 1px solid #ddd;
+      display: block;
+      border-radius: 3px;
+    }
+    label{
+      font-weight: 400;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    button{
+      background: #FC6E51;
+      color: #fff;
+      border: 1px solid #FC6E51;
+      border-radius: 3px;
+      font-size: 12px;
+      box-shadow: 0 0.5px 0px 0px #D5D5D5;
+      padding: 4px 18px;
+      &:hover{
+        border-color: #cbcbcb;
+        background: #FFF;
+        color: #333;
+      }
+    }
+    .filter-buttons{
+      margin-top: 10px;
+      text-align: right;
+    }
+  }
+}

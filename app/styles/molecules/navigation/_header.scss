@@ -1,0 +1,39 @@
+header {
+  border-bottom: 1px solid $border;
+  padding-bottom: 10px;
+  background: white;
+  .header-btn {
+    padding: 10px;
+    position: relative;
+    text-align: center;
+  }
+  .logo {
+    display: inline-block;
+    margin-left: -8px;
+    img {
+      max-width: 150px;
+    }
+  }
+  .dropdown {
+    float: right;
+    position: relative;
+    a {
+      color: $text;
+      font-size: 12px;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+  .profile {
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.md-gravatar{
+  display: inline-block;
+  img{
+    width: 30px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,39 @@
+.group-title{
+  h3, h4{
+    margin-bottom: 5px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: inline-block;
+    width: 100%;
+  }
+  &.group{
+    border-bottom: 1px solid #B0B0B0;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .group-description{
+    font-size: 11.5px;
+    color: #616161;
+    margin-bottom: 5px;
+  }
+  .group-data{
+    float: right;
+    font-size: 12px;
+    letter-spacing: 0;
+    &.bold{
+      font-weight: 400;
+    }
+  }
+  &.group{
+    margin-left: 10px;
+    h4{
+      font-weight: 400;
+    }
+  }
+  &.subgroup{
+    margin-left: 20px;
+    &  + .tasks{
+      margin-left: 30px;
+    }
+  }
+}

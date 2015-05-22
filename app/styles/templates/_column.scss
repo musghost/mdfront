@@ -1,0 +1,78 @@
+.column {
+  left: 290px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.full-column{
+  .full-elem{
+    display: inline-block;
+  }
+  .user-md{
+    max-height: none !important;
+    margin-left: 6px;
+    padding-top: 2px;
+    .fa{
+      display: none;
+    }
+    .user-md-label{
+      display: block;
+      line-height: 9px;
+      color: #909090;
+      font-size: 12px;
+    }
+  }
+  .general{
+    img{
+      float: left;
+    }
+  }
+  .project{
+    .project-name{
+      display: block;
+    }
+    .project-group{
+      color: #575757;
+      margin-left: 13px;
+      font-weight: 400;
+    }
+  }
+  .time{
+    font-size: 12px;
+    div{
+      display: inline-block;
+      span{
+        font-size: 12px;
+        color: #909090;
+        font-weight: 300;
+      }
+    }
+  }
+  .circles{
+    .time{
+      div{
+        display: block;
+      }
+    }
+  }
+}
+
+.third-column{
+  position: absolute;
+  right: 0;
+  height:100%;
+}
+
+.half-column{
+  height: 100%;
+  position: absolute;
+  overflow-y: auto;
+  .circles{
+    .states-wrapper, .dates-wrapper{
+      width: 100%;
+    }
+  }
+}

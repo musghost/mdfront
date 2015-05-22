@@ -1,0 +1,1331 @@
+doctype html
+html.no-js
+  head
+    meta(charset='utf-8')
+    title mdfront
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    link(rel='shortcut icon', href='/favicon.ico')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+    // build:css(.) styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    // build:css(.tmp) styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+  body
+    //if lt IE 10
+      p.browsehappy
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+    #main
+      #navigation
+        header
+          .header-btn
+            a.logo
+              img(src='images/common/logo.png')
+            span.dropdown
+              a.profile.dropdown-toggle
+                .md-gravatar
+                  img(src='images/holder/nav/avatar.png')
+              .dropdown-menu
+                ul
+                  li
+                    a(href='')
+                      span.fa.fa-cog
+                      |  Preferencias
+                  li
+                    a(href='')
+                      span.fa.fa-asterisk
+                      |  Cambio de contraseña
+                  li
+                    a(href='')
+                      span.fa.fa-sign-out
+                      |  Salir
+            .menu-mini.ng-isolate-scope
+              .bars-container
+                span.bars
+                span.bars
+                span.bars
+              .md-menu-content
+                ul
+                  li.form-search
+                    form
+                      input
+                  li.mdmenu-li-item
+                    .hold
+                      span.menu-text
+                        span.circle
+                          span.fa.fa-ticket
+                        | Ticket
+                  li.mdmenu-li-item
+                    .hold
+                      span.menu-text
+                        span.circle
+                          span.fa.fa-plus-square
+                        | Tarea
+        .wrapper
+          .alerts
+            ul.nav-buttons
+              li.nav-button.button-1.dropdown
+                a(href='', data-toggle='dropdown')
+                  i.glyphicon.glyphicon-inbox
+                  span.alert
+                    span.alert-red •
+                    |  24
+              li.nav-button.button-2.dropdown
+                a(href='', data-toggle='dropdown')
+                  i.glyphicon.glyphicon-bell
+                  span.alert
+                    span.alert-green •
+                    |  99
+              li.nav-button.button-3.dropdown
+                a(href='', data-toggle='dropdown')
+                  i.glyphicon.glyphicon-comment
+                  span.alert
+                    span.alert-yellow •
+                    |  4
+              li.nav-button.button-4.dropdown
+                a(href='', data-toggle='dropdown')
+                  i.glyphicon.glyphicon-hdd
+                  span.alert
+                    span.alert-orange •
+                    |  2
+              li.nav-button.button-1.dropdown
+                a(href='', data-toggle='dropdown')
+                  i.glyphicon.glyphicon-inbox
+                  span.alert
+                    span.alert-red •
+                    |  24
+          .profile
+            .notifications
+              .time-progress
+                span.assigned 1h 2min
+                span.total 8h
+              .progress
+                .progress-bar(role='progressbar')
+              .options
+                label.toggle
+                  input(type='checkbox')
+                  span.handle
+          .principal-menu
+            .menu-mini
+              .bars-container
+                span.bars
+                span.bars
+                span.bars
+              .md-menu-content
+                ul
+                  li.form-search
+                    form.ng-pristine
+                      input(type='text', placeholder='Navegar')
+                  li.mdmenu-li-item
+                    .hold
+                      span.menu-text.ng-binding
+                        span.circle
+                          span.fa.fa-ticket
+                        | Mi espacio
+                      ul.mdmenu-sub
+                        li
+                          a(href='') Panel del día
+                        li
+                          a(href='') Tareas
+                        li
+                          a(href='') Gastos por atender
+                        li
+                          a(href='') Mis horas
+                        li
+                          a(href='') Mis gatos
+                        li
+                          a(href='') Preferencias
+                  li.mdmenu-li-item
+                    .hold
+                      span.menu-text
+                        span.circle
+                          span.fa.fa-ticket
+                        | Proyectos
+                      ul.mdmenu-sub
+                        li
+                          a(href='') Plan de trabajo
+                        li
+                          a(href='') Explorar
+                        li
+                          a(href='') Panel de externos
+                        li
+                          a(href='') Revisión rápida
+                        li
+                          a(href='') Vista rápida de tareas
+                        li
+                          a(href='') Línea de tiempo
+                        li
+                          a(href='') Consulta de tiempos
+                        li
+                          a(href='') Consulta de gastos
+                        li
+                          a(href='') Balance
+                        li
+                          a(href='') Disponibilidad
+                        li
+                          a(href='') Fechas comprometidas
+                  li.mdmenu-li-item
+                    .hold
+                      span.menu-text
+                        span.circle
+                          span.fa.fa-ticket
+                        | Personas
+                      ul.mdmenu-sub
+                        li
+                          a(href='') Explorar
+                        li
+                          a(href='') Personas Disponibles
+                        li
+                          a(href='') Alarmas Generales
+                        li
+                          a(href='') Entradas y Salidas
+                        li
+                          a(href='') Actividad a Detalle
+                  li.mdmenu-li-item
+                    .hold
+                      span.menu-text
+                        span.circle
+                          span.fa.fa-ticket
+                        | Explora
+                      ul.mdmenu-sub
+                        li
+                          a(href='') Explorar
+                        li
+                          a(href='') Personas Disponibles
+                        li
+                          a(href='') Alarmas Generales
+                        li
+                          a(href='') Entradas y Salidas
+                        li
+                          a(href='') Actividad a Detalle
+                  li.mdmenu-li-item
+                    .hold
+                      span.menu-text
+                        span.circle
+                          span.fa.fa-ticket
+                        | Busca
+                      ul.mdmenu-sub
+          footer
+            div
+              a(href='#') manoderecha.mx
+              a(href='#') @manoderecha_pm
+            div
+              a(href='http://hechoencd.mx')
+                | Hecho con
+                span(style='color: #E74C3C') ♥
+                |  en
+                b #CDMX
+      .column
+        .row.remove-margin
+          .col-lg-12.col-md-12.col-sm-12.full-column
+            .description
+              h3 Reporte General
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            .filter-control
+              .filter-body
+                .filter-form
+                  input(type='text')
+                  button
+                    span.fa.fa-search
+                .filter-content
+                  h5 Filtro de tareas
+                  form
+                    .row
+                      .col-md-6
+                        .form-field
+                          label Id
+                          div
+                            input(type='text')
+                      .col-md-6
+                        .form-field
+                          label Concepto
+                          div
+                            input(type='text')
+                    .row
+                      .col-md-6
+                        .form-field
+                          label Estado
+                          div
+                            input(type='text')
+                      .col-md-6
+                        .form-field
+                          label Responsable
+                          div
+                            input(type='text')
+                  .filter-buttons
+                    button Filtrar
+            .filters
+              div
+                ul.nav.nav-pills
+                  li.active
+                    a Parámetros
+                  li
+                    a.ng-binding(ng-click='select()', tab-heading-transclude='') Filtros
+                  li.ng-isolate-scope(ng-class='{active: active, disabled: disabled}', heading='Avanzados')
+                    a.ng-binding(ng-click='select()', tab-heading-transclude='') Avanzados
+                  li.ng-isolate-scope(ng-class='{active: active, disabled: disabled}', heading='Opciones del buscador')
+                    a.ng-binding(ng-click='select()', tab-heading-transclude='') Opciones del buscador
+                  li.ng-isolate-scope(ng-class='{active: active, disabled: disabled}', heading='Por lote')
+                    a.ng-binding(ng-click='select()', tab-heading-transclude='') Por lote
+                  li.ng-isolate-scope(ng-class='{active: active, disabled: disabled}', heading='Despliegue')
+                    a.ng-binding(ng-click='select()', tab-heading-transclude='') Despliegue
+                .tab-content
+                  .tab-pane.ng-scope.active(ng-repeat='tab in tabs', ng-class='{active: tab.active}', tab-content-transclude='tab')
+                    .tab.tab-params.ng-scope
+                      .row
+                        .col-md-6
+                          div
+                            h4 Selecciona tu búsqueda
+                            .form-group
+                              label
+                                i.fa.fa-rocket
+                                span Selecciona proyecto
+                              select
+                                option(value='  ')  
+                                option(value='Aeromexico ') Aeromexico
+                                option(value='Manoderecha md2 ') Manoderecha md2
+                                option(value='Clubpremier ') Clubpremier
+                                option(value='Chilis Mto ') Chilis Mto
+                            .form-group
+                              label
+                                i.fa.fa-user
+                                span Selecciona usuario
+                              select
+                                option(value='  ')  
+                                option(value='Andrés Cidel Ortega ') Andrés Cidel Ortega
+                                option(value='Juan Carlos Luna Ávila ') Juan Carlos Luna Ávila
+                                option(value='Gloria Palma Gonzales ') Gloria Palma Gonzales
+                                option(value='Miguel Bonachea Soto ') Miguel Bonachea Soto
+                                option(value='Luis Fernando Mendoza Olguín ') Luis Fernando Mendoza Olguín
+                            .form-group
+                              label
+                                i.fa.fa-calendar
+                                span Fecha origen
+                              input.form-control.ng-isolate-scope.ng-pristine.ng-valid.ng-valid-required.ng-valid-date(type='text', datepicker-popup='dd MMMM, yyyy', ng-model='dt', is-open='opened', ng-required='true', datepicker-options='dateOptions', close-text='Cerrar', ng-click='opened = true', required='required')
+                              ul.dropdown-menu.ng-pristine.ng-valid.ng-valid-date.ng-valid-date-disabled(ng-style="{display: (isOpen && 'block') || 'none', top: position.top+'px', left: position.left+'px'}", ng-keydown='keydown($event)', datepicker-popup-wrap='', ng-model='date', ng-change='dateSelection()', style='display: none;')
+                                li(ng-transclude='')
+                                  .ng-isolate-scope(ng-switch='datepickerMode', role='application', ng-keydown='keydown($event)', datepicker='', format-year='yy', starting-day='1')
+                                    // ngSwitchWhen: day
+                                    table(role='grid', aria-labelledby='datepicker-00Y-3441-title', aria-activedescendant='datepicker-00Y-3441-25', ng-switch-when='day', tabindex='0')
+                                      thead
+                                        tr
+                                          th
+                                            button.btn.btn-default.btn-sm.pull-left(type='button', ng-click='move(-1)', tabindex='-1')
+                                              i.glyphicon.glyphicon-chevron-left
+                                          th(colspan='6')
+                                            button#datepicker-00Y-3441-title.btn.btn-default.btn-sm(role='heading', aria-live='assertive', aria-atomic='true', type='button', ng-click='toggleMode()', tabindex='-1', style='width:100%;')
+                                              strong.ng-binding May 2015
+                                          th
+                                            button.btn.btn-default.btn-sm.pull-right(type='button', ng-click='move(1)', tabindex='-1')
+                                              i.glyphicon.glyphicon-chevron-right
+                                        tr
+                                          th.text-center(ng-show='showWeeks')
+                                          // ngRepeat: label in labels track by $index
+                                          th.text-center.ng-scope(ng-repeat='label in labels track by $index')
+                                            small.ng-binding(aria-label='Monday') Mon
+                                          // end ngRepeat: label in labels track by $index
+                                          th.text-center.ng-scope(ng-repeat='label in labels track by $index')
+                                            small.ng-binding(aria-label='Tuesday') Tue
+                                          // end ngRepeat: label in labels track by $index
+                                          th.text-center.ng-scope(ng-repeat='label in labels track by $index')
+                                            small.ng-binding(aria-label='Wednesday') Wed
+                                          // end ngRepeat: label in labels track by $index
+                                          th.text-center.ng-scope(ng-repeat='label in labels track by $index')
+                                            small.ng-binding(aria-label='Thursday') Thu
+                                          // end ngRepeat: label in labels track by $index
+                                          th.text-center.ng-scope(ng-repeat='label in labels track by $index')
+                                            small.ng-binding(aria-label='Friday') Fri
+                                          // end ngRepeat: label in labels track by $index
+                                          th.text-center.ng-scope(ng-repeat='label in labels track by $index')
+                                            small.ng-binding(aria-label='Saturday') Sat
+                                          // end ngRepeat: label in labels track by $index
+                                          th.text-center.ng-scope(ng-repeat='label in labels track by $index')
+                                            small.ng-binding(aria-label='Sunday') Sun
+                                          // end ngRepeat: label in labels track by $index
+                                      tbody
+                                        // ngRepeat: row in rows track by $index
+                                        tr.ng-scope(ng-repeat='row in rows track by $index')
+                                          td.text-center.h6(ng-show='showWeeks')
+                                            em.ng-binding 18
+                                          // ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-0.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-muted(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 27
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-1.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-muted(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 28
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-2.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-muted(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 29
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-3.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-muted(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 30
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-4.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 01
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-5.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 02
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-6.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 03
+                                          // end ngRepeat: dt in row track by dt.date
+                                        // end ngRepeat: row in rows track by $index
+                                        tr.ng-scope(ng-repeat='row in rows track by $index')
+                                          td.text-center.h6(ng-show='showWeeks')
+                                            em.ng-binding 19
+                                          // ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-7.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 04
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-8.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 05
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-9.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 06
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-10.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 07
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-11.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 08
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-12.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 09
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-13.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 10
+                                          // end ngRepeat: dt in row track by dt.date
+                                        // end ngRepeat: row in rows track by $index
+                                        tr.ng-scope(ng-repeat='row in rows track by $index')
+                                          td.text-center.h6(ng-show='showWeeks')
+                                            em.ng-binding 20
+                                          // ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-14.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 11
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-15.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 12
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-16.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 13
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-17.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 14
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-18.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 15
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-19.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 16
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-20.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 17
+                                          // end ngRepeat: dt in row track by dt.date
+                                        // end ngRepeat: row in rows track by $index
+                                        tr.ng-scope(ng-repeat='row in rows track by $index')
+                                          td.text-center.h6(ng-show='showWeeks')
+                                            em.ng-binding 21
+                                          // ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-21.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 18
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-22.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 19
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-23.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 20
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-24.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 21
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-25.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm.btn-info.active(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-info(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 22
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-26.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 23
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-27.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 24
+                                          // end ngRepeat: dt in row track by dt.date
+                                        // end ngRepeat: row in rows track by $index
+                                        tr.ng-scope(ng-repeat='row in rows track by $index')
+                                          td.text-center.h6(ng-show='showWeeks')
+                                            em.ng-binding 22
+                                          // ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-28.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 25
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-29.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 26
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-30.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 27
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-31.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 28
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-32.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 29
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-33.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 30
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-34.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 31
+                                          // end ngRepeat: dt in row track by dt.date
+                                        // end ngRepeat: row in rows track by $index
+                                        tr.ng-scope(ng-repeat='row in rows track by $index')
+                                          td.text-center.h6(ng-show='showWeeks')
+                                            em.ng-binding 23
+                                          // ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-35.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-muted(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 01
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-36.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-muted(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 02
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-37.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-muted(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 03
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-38.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-muted(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 04
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-39.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-muted(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 05
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-40.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-muted(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 06
+                                          // end ngRepeat: dt in row track by dt.date
+                                          td#datepicker-00Y-3441-41.text-center.ng-scope(ng-repeat='dt in row track by dt.date', role='gridcell', aria-disabled='false')
+                                            button.btn.btn-default.btn-sm(type='button', style='width:100%;', ng-class="{'btn-info': dt.selected, active: isActive(dt)}", ng-click='select(dt.date)', ng-disabled='dt.disabled', tabindex='-1')
+                                              span.ng-binding.text-muted(ng-class="{'text-muted': dt.secondary, 'text-info': dt.current}") 07
+                                          // end ngRepeat: dt in row track by dt.date
+                                        // end ngRepeat: row in rows track by $index
+                                    // ngSwitchWhen: month
+                                    // ngSwitchWhen: year
+                                // ngIf: showButtonBar
+                                li.ng-scope(ng-if='showButtonBar', style='padding:10px 9px 2px')
+                                  span.btn-group
+                                    button.btn.btn-sm.btn-info.ng-binding(type='button', ng-click="select('today')") Today
+                                    button.btn.btn-sm.btn-danger.ng-binding(type='button', ng-click='select(null)') Clear
+                                  button.btn.btn-sm.btn-success.pull-right.ng-binding(type='button', ng-click='close()') Cerrar
+                                // end ngIf: showButtonBar
+                            .form-group
+                              .checkbox
+                                label
+                                  input(type='checkbox')
+                                  span
+                                    span.fa.fa-check-square.opened
+                                    span.fa.fa-square.closed
+                                  span  Mostrar por agrupador
+                              .checkbox
+                                label
+                                  input(type='checkbox')
+                                  span
+                                    span.fa.fa-check-square.opened
+                                    span.fa.fa-square.closed
+                                  span  Mostrar tareas no visibles
+                        .col-md-6
+                          h4 Indicadores
+                          .form-group
+                            span.state
+                              span.md-filter-label.urgent
+                              span Urgente
+                            span.state
+                              span.md-filter-label.exceeded
+                              span Excedida
+                            span.state
+                              span.md-filter-label.no-estimate
+                              span Sin horas estimadas
+                            span.state
+                              span.md-filter-label.delayed
+                              span Retrasada
+                          h4 Dependencia
+                          .form-group
+                            span.md-label Predecesora
+                            span.md-label Actual
+                            span.md-label Sucesora
+                          .form-group
+                            .checkbox
+                              label
+                                input(type='checkbox')
+                                span
+                                  span.fa.fa-eye.opened
+                                  span.fa.fa-eye-slash.closed
+                                span  Mostrar por agrupador
+                  // end ngRepeat: tab in tabs
+                  .tab-pane.ng-scope(ng-repeat='tab in tabs', ng-class='{active: tab.active}', tab-content-transclude='tab')
+                    .tab.tab-filters.ng-scope
+                      .row
+                        .col-md-6
+                          h4 Filtros disponibles
+                        .col-md-6
+                          h4 Filtros actuales
+                      .row(container-filter='')
+                        .col-md-6
+                          .form-group
+                            label Agrega proyecto
+                            .list-filter.ng-isolate-scope(items='items')
+                              button(ng-click='toggleDisplay()', type='button')
+                                span.fa.fa-plus-circle
+                              .list-filter-content.ng-hide(ng-hide='hideFilter')
+                                input.ng-pristine.ng-valid(type='text', ng-keyup='keyup()', ng-model='word')
+                                .md-shadow.list-filter-scroll
+                                  // ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Aeroméxico Analytics [am_analytics]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding aeromexico.com [AM]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Alder Koten Rediseño de Sitio [AK_WEB]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding aristeguinoticias.com [aristeguiweb]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Aristos Mantenimiento [aristos_mtto]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding BDD Fundacion Pro Niños IAP [bdd_fundacion]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Bissu [bissu]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Bixva Mantenimiento [bixva_mtto]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding CalCtose Web Site [calctose]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Campus [campus]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Centraal Sistema [centraal]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Chilis mantenimiento global [chilismtto]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Class Sitio Web [class]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Club Premier Backoffice [cpBackoffice]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Club Premier Corporativo [cpcorp]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Club Premier Documentación [cpdocumentacion]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Club Premier Experiencias [cpexperiencias]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Club Premier General [clubpremier]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Club Premier Infraestructura [cpinfra]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Club Premier KmP - Puntos Bancomer [cpBancomer]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Club Premier Liga [cpliga]
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Club Premier Member [cpmember]
+                                  // end ngRepeat: item in items
+                        .col-md-6
+                          .current-filters
+                            h5 Proyecto
+                            .current-filter.ng-isolate-scope
+                              // ngRepeat: item in items
+                      .row(container-filter='')
+                        .col-md-6
+                          .form-group
+                            label Agrega agrupador
+                            .list-filter.ng-isolate-scope(items='agrupadores')
+                              button(ng-click='toggleDisplay()', type='button')
+                                span.fa.fa-plus-circle
+                              .list-filter-content.ng-hide(ng-hide='hideFilter')
+                                input.ng-pristine.ng-valid(type='text', ng-keyup='keyup()', ng-model='word')
+                                .md-shadow.list-filter-scroll
+                                  // ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Agrupador 1
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Agrupador 2
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Agrupador 3
+                                  // end ngRepeat: item in items
+                        .col-md-6
+                          .current-filters
+                            h5 Agrupadores
+                            .current-filter.ng-isolate-scope
+                              // ngRepeat: item in items
+                      .row(container-filter='')
+                        .col-md-6
+                          .form-group
+                            label Agrega responsable
+                            .list-filter.ng-isolate-scope(items='responsables')
+                              button(ng-click='toggleDisplay()', type='button')
+                                span.fa.fa-plus-circle
+                              .list-filter-content.ng-hide(ng-hide='hideFilter')
+                                input.ng-pristine.ng-valid(type='text', ng-keyup='keyup()', ng-model='word')
+                                .md-shadow.list-filter-scroll
+                                  // ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Calleja Duarte, Fernando
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Aranda Salgado, Christian
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Barrera Delgado, Bernardo Elden Manuel
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Bonachea Soto, Miguel Ángel
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Ferra Jalpa, Juan Carlos
+                                  // end ngRepeat: item in items
+                                  .filter-item.ng-scope(ng-repeat='item in items', ng-click='clicked($index)', ng-show='item.show')
+                                    span.ng-binding Gómez Moncada Escalante, Fernando
+                                  // end ngRepeat: item in items
+                        .col-md-6
+                          .current-filters
+                            h5 Responsables
+                            .current-filter.ng-isolate-scope
+                              // ngRepeat: item in items
+                      .row
+                        .col-md-6
+                          // <h4>Filtros disponibles</h4>
+                          .form-group
+                            label
+                              | Agrega filtro de facturación
+                              span.fa.fa-plus-circle
+                          .form-group
+                            label
+                              | Agrega visibilidad
+                              span.fa.fa-plus-circle
+                        .col-md-6
+                          .current-filters
+                            // <h4>Filtros actuales</h4>
+                            h5 Filtro de facturación
+                            .current-filter
+                              span.md-label Urgente
+                              span.md-label Urgente
+                              span.md-label Urgente
+                              span.md-label Urgente
+                            h5 Visibilidad
+                  // end ngRepeat: tab in tabs
+                  .tab-pane.ng-scope(ng-repeat='tab in tabs', ng-class='{active: tab.active}', tab-content-transclude='tab')
+                    .tab.tab-advanced.ng-scope
+                      .row
+                        .col-md-6
+                          h4 Ordenamiento actual
+                        .col-md-6
+                          h4 Criterios disponibles
+                          div
+                            span.md-label Proyecto
+                            span.md-label Estado
+                            span.md-label Prioridad
+                            span.md-label Responsable
+                            span.md-label Solicitante
+                            span.md-label Agrupador
+                            span.md-label Creación
+                            span.md-label Entrega
+                  // end ngRepeat: tab in tabs
+                  .tab-pane.ng-scope(ng-repeat='tab in tabs', ng-class='{active: tab.active}', tab-content-transclude='tab')
+                    .tab.ng-scope
+                      .row
+                        .col-md-6
+                          h4 Avanzadas
+                          .form-group
+                            label
+                              i.fa.fa-rocket
+                              span Agrupa por proyecto
+                            select
+                              option(value='  ')  
+                              option(value='Aeromexico ') Aeromexico
+                          .form-group
+                            label
+                              span Ordena por proyecto
+                            select
+                              option(value='  ')  
+                              option(value='Aeromexico ') Aeromexico
+                        .col-md-6
+                          h4 Opciones
+                          .form-group
+                            .checkbox
+                              label
+                                input(type='checkbox')
+                                span
+                                  span.fa.fa-check-square.opened
+                                  span.fa.fa-square.closed
+                                span  Incluir tareas
+                            .checkbox
+                              label
+                                input(type='checkbox')
+                                span
+                                  span.fa.fa-check-square.opened
+                                  span.fa.fa-square.closed
+                                span  Incluir tareas sin fechas
+                          .form-group
+                            label
+                              i.fa.fa-calendar
+                              span Fecha origen
+                            input(type='text')
+                  // end ngRepeat: tab in tabs
+                  .tab-pane.ng-scope(ng-repeat='tab in tabs', ng-class='{active: tab.active}', tab-content-transclude='tab')
+                    .tab.ng-scope
+                      .row
+                        .col-md-6
+                          h4 Puedes seleccionar 1 o más
+                          .form-group
+                            label
+                              i.fa.fa-rocket
+                              span Selecciona proyecto
+                            select
+                              option(value='  ')  
+                              option(value='Aeromexico ') Aeromexico
+                          .form-group
+                            label
+                              i.fa.fa-rocket
+                              span Selecciona solicitante
+                            select
+                              option(value='  ')  
+                              option(value='Aeromexico ') Aeromexico
+                          .form-group
+                            label
+                              i.fa.fa-rocket
+                              span Selecciona responsable
+                            select
+                              option(value='  ')  
+                              option(value='Aeromexico ') Aeromexico
+                          .form-group
+                            label
+                              i.fa.fa-rocket
+                              span Selecciona estado
+                            select
+                              option(value='  ')  
+                              option(value='Aeromexico ') Aeromexico
+                          .form-group
+                            label
+                              i.fa.fa-rocket
+                              span Selecciona prioridad
+                            select
+                              option(value='  ')  
+                              option(value='Aeromexico ') Aeromexico
+                          .form-group
+                            label
+                              i.fa.fa-rocket
+                              span Selecciona visibilidad
+                            select
+                              option(value='  ')  
+                              option(value='Aeromexico ') Aeromexico
+                        .col-md-6
+                          h4 Nota
+                          p Los siguientes estados están disponibles
+                  // end ngRepeat: tab in tabs
+                  .tab-pane.ng-scope(ng-repeat='tab in tabs', ng-class='{active: tab.active}', tab-content-transclude='tab')
+                    .tab.ng-scope
+                      div
+                        span.md-label Prioridad
+                        span.md-label Estado
+                      div
+                        span Fechas
+                        span
+                          span.md-label Creación
+                          span.md-label Inicio
+                          span.md-label Entrega
+                      div
+                        span Personas
+                        span
+                          span.md-label Solicitante
+                          span.md-label Responsable
+                      div
+                        span Agrupador
+                        span
+                          span.md-label Agrupador en el proyecto
+                  // end ngRepeat: tab in tabs
+            .group-title
+              h3 Aeroméxico
+              p.group-description
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            .group-title.group
+              h4 Fuera de alcance
+                span.group-data 10 tareas
+            .group-title.subgroup
+              h4 Fuera de alcance
+                span.group-data 10 tareas
+            .tasks
+              .task.revision.very-high
+                h4
+                  i.fa.fa-quote-right
+                  a(href='#') Agregar pantalla de inicio con selección de ciudades a la app del clima
+                .general
+                  .row
+                    .col-lg-5.col-md-5.col-sm-5
+                      .project
+                        h5.project-name
+                          i.fa.fa-flag
+                          |  Aeroméxico
+                        span.project-group  Front-end
+                    .col-lg-7.col-md-7.col-sm-7
+                      .row
+                        .col-md-6.col-sm-6
+                          img.full-elem(src='images/holder/nav/avatar.png')
+                          span.user-md
+                            i.fa.fa-chevron-circle-down
+                            span.full-elem.user-md-label Reponsable
+                            |  Cidel Ortega Arturo Andrés
+                        .col-md-6.col-sm-6
+                          img.full-elem(src='images/holder/nav/avatar.png')
+                          span.user-md
+                            i.fa.fa-chevron-circle-up
+                            span.full-elem.user-md-label Solicitante
+                            |  Cidel Ortega Arturo Andrés
+                .states.circles
+                  .row
+                    .col-md-5.col-sm-12.states-wrapper
+                      span.state-icon
+                        i.fa.fa-bolt
+                      span.row-states
+                        span.state-label
+                          span.state.primary-state.very-high
+                          |  Muy Alta
+                        span.state-label
+                          span.state.primary-state.accepted
+                          |  Aceptada
+                      span.state-icon
+                        i.fa.fa-bell
+                      span.row-states
+                        span.state-label
+                          span.state.primary-state.exceeded
+                          |  Excedida
+                        span.state-label
+                          span.state.primary-state.no-estimate
+                          |  Sin estimación
+                        span.state-label
+                          span.state.primary-state.delayed
+                          |  Retrasada
+                        span.state-label
+                          span.state.primary-state.urgent
+                          |  Urgente
+                    .col-md-7.col-sm-12.dates-wrapper
+                      .dates
+                        .row
+                          .col-md-3
+                            .time
+                              div
+                                span Creada
+                              span 22 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Inicia
+                              span 23 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Entrega
+                              span 24 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Conclusión
+                              span 25 de noviembre
+                .extra-options
+              .task.revision.high
+                h4
+                  i.fa.fa-quote-right
+                  a(href='#') Agregar pantalla de inicio con selección de ciudades a la app del clima
+                .general
+                  .row
+                    .col-lg-5.col-md-5.col-sm-5
+                      .project
+                        h5.project-name
+                          i.fa.fa-flag
+                          |  Aeroméxico
+                        span.project-group  Front-end
+                    .col-lg-7.col-md-7.col-sm-7
+                      .row
+                        .col-md-6.col-sm-6
+                          img.full-elem(src='images/holder/nav/avatar.png')
+                          span.user-md
+                            i.fa.fa-chevron-circle-down
+                            span.full-elem.user-md-label Reponsable
+                            |  Cidel Ortega Arturo Andrés
+                        .col-md-6.col-sm-6
+                          img.full-elem(src='images/holder/nav/avatar.png')
+                          span.user-md
+                            i.fa.fa-chevron-circle-up
+                            span.full-elem.user-md-label Solicitante
+                            |  Cidel Ortega Arturo Andrés
+                .states.circles
+                  .row
+                    .col-md-5.col-sm-12.states-wrapper
+                      span.state-icon
+                        i.fa.fa-bolt
+                      span.row-states
+                        span.state-label
+                          span.state.primary-state.high
+                          |  Alta
+                        span.state-label
+                          span.state.primary-state.inbox
+                          |  Bandeja
+                      span.state-icon
+                        i.fa.fa-bell
+                      span.row-states
+                        span.state-label
+                          span.state.primary-state.exceeded
+                          |  Excedida
+                        span.state-label
+                          span.state.primary-state.no-estimate
+                          |  Sin estimación
+                        span.state-label
+                          span.state.primary-state.delayed
+                          |  Retrasada
+                        span.state-label
+                          span.state.primary-state.urgent
+                          |  Urgente
+                    .col-md-7.col-sm-12.dates-wrapper
+                      .dates
+                        .row
+                          .col-md-3
+                            .time
+                              div
+                                span Creada
+                              span 22 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Inicia
+                              span 23 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Entrega
+                              span 24 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Conclusión
+                              span 25 de noviembre
+                .extra-options
+              .task.revision.normal
+                h4
+                  i.fa.fa-quote-right
+                  a(href='#') Agregar pantalla de inicio con selección de ciudades a la app del clima
+                .general
+                  .row
+                    .col-lg-5.col-md-5.col-sm-5
+                      .project
+                        h5.project-name
+                          i.fa.fa-flag
+                          |  Aeroméxico
+                        span.project-group  Front-end
+                    .col-lg-7.col-md-7.col-sm-7
+                      .row
+                        .col-md-6.col-sm-6
+                          img.full-elem(src='images/holder/nav/avatar.png')
+                          span.user-md
+                            i.fa.fa-chevron-circle-down
+                            span.full-elem.user-md-label Reponsable
+                            |  Cidel Ortega Arturo Andrés
+                        .col-md-6.col-sm-6
+                          img.full-elem(src='images/holder/nav/avatar.png')
+                          span.user-md
+                            i.fa.fa-chevron-circle-up
+                            span.full-elem.user-md-label Solicitante
+                            |  Cidel Ortega Arturo Andrés
+                .states.circles
+                  .row
+                    .col-md-5.col-sm-12.states-wrapper
+                      span.state-icon
+                        i.fa.fa-bolt
+                      span.row-states
+                        span.state-label
+                          span.state.primary-state.normal
+                          |  Normal
+                        span.state-label
+                          span.state.primary-state.develop
+                          |  Desarrollo
+                      span.state-icon
+                        i.fa.fa-bell
+                      span.row-states
+                        span.state-label
+                          span.state.primary-state.exceeded
+                          |  Excedida
+                        span.state-label
+                          span.state.primary-state.no-estimate
+                          |  Sin estimación
+                        span.state-label
+                          span.state.primary-state.delayed
+                          |  Retrasada
+                        span.state-label
+                          span.state.primary-state.urgent
+                          |  Urgente
+                    .col-md-7.col-sm-12.dates-wrapper
+                      .dates
+                        .row
+                          .col-md-3
+                            .time
+                              div
+                                span Creada
+                              span 22 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Inicia
+                              span 23 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Entrega
+                              span 24 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Conclusión
+                              span 25 de noviembre
+                .extra-options
+              .task.revision.low
+                h4
+                  i.fa.fa-quote-right
+                  a(href='#') Agregar pantalla de inicio con selección de ciudades a la app del clima
+                .general
+                  .row
+                    .col-lg-5.col-md-5.col-sm-5
+                      .project
+                        h5.project-name
+                          i.fa.fa-flag
+                          |  Aeroméxico
+                        span.project-group  Front-end
+                    .col-lg-7.col-md-7.col-sm-7
+                      .row
+                        .col-md-6.col-sm-6
+                          img.full-elem(src='images/holder/nav/avatar.png')
+                          span.user-md
+                            i.fa.fa-chevron-circle-down
+                            span.full-elem.user-md-label Reponsable
+                            |  Cidel Ortega Arturo Andrés
+                        .col-md-6.col-sm-6
+                          img.full-elem(src='images/holder/nav/avatar.png')
+                          span.user-md
+                            i.fa.fa-chevron-circle-up
+                            span.full-elem.user-md-label Solicitante
+                            |  Cidel Ortega Arturo Andrés
+                .states.circles
+                  .row
+                    .col-md-5.col-sm-12.states-wrapper
+                      span.state-icon
+                        i.fa.fa-bolt
+                      span.row-states
+                        span.state-label
+                          span.state.primary-state.low
+                          |  Baja
+                        span.state-label
+                          span.state.primary-state.reference
+                          |  Referencia
+                      span.state-icon
+                        i.fa.fa-bell
+                      span.row-states
+                        span.state-label
+                          span.state.primary-state.exceeded
+                          |  Excedida
+                        span.state-label
+                          span.state.primary-state.no-estimate
+                          |  Sin estimación
+                        span.state-label
+                          span.state.primary-state.delayed
+                          |  Retrasada
+                        span.state-label
+                          span.state.primary-state.urgent
+                          |  Urgente
+                    .col-md-7.col-sm-12.dates-wrapper
+                      .dates
+                        .row
+                          .col-md-3
+                            .time
+                              div
+                                span Creada
+                              span 22 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Inicia
+                              span 23 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Entrega
+                              span 24 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Conclusión
+                              span 25 de noviembre
+                .extra-options
+              .task.revision.very-low
+                h4
+                  i.fa.fa-quote-right
+                  a(href='#') Agregar pantalla de inicio con selección de ciudades a la app del clima
+                .general
+                  .row
+                    .col-lg-5.col-md-5.col-sm-5
+                      .project
+                        h5.project-name
+                          i.fa.fa-flag
+                          |  Aeroméxico
+                        span.project-group  Front-end
+                    .col-lg-7.col-md-7.col-sm-7
+                      .row
+                        .col-md-6.col-sm-6
+                          img.full-elem(src='images/holder/nav/avatar.png')
+                          span.user-md
+                            i.fa.fa-chevron-circle-down
+                            span.full-elem.user-md-label Reponsable
+                            |  Cidel Ortega Arturo Andrés
+                        .col-md-6.col-sm-6
+                          img.full-elem(src='images/holder/nav/avatar.png')
+                          span.user-md
+                            i.fa.fa-chevron-circle-up
+                            span.full-elem.user-md-label Solicitante
+                            |  Cidel Ortega Arturo Andrés
+                .states.circles
+                  .row
+                    .col-md-5.col-sm-12.states-wrapper
+                      span.state-icon
+                        i.fa.fa-bolt
+                      span.row-states
+                        span.state-label
+                          span.state.primary-state.very-low
+                          |  Muy Baja
+                        span.state-label
+                          span.state.primary-state.done
+                          |  Terminada
+                      span.state-icon
+                        i.fa.fa-bell
+                      span.row-states
+                        span.state-label
+                          span.state.primary-state.exceeded
+                          |  Excedida
+                        span.state-label
+                          span.state.primary-state.no-estimate
+                          |  Sin estimación
+                        span.state-label
+                          span.state.primary-state.delayed
+                          |  Retrasada
+                        span.state-label
+                          span.state.primary-state.urgent
+                          |  Urgente
+                    .col-md-7.col-sm-12.dates-wrapper
+                      .dates
+                        .row
+                          .col-md-3
+                            .time
+                              div
+                                span Creada
+                              span 22 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Inicia
+                              span 23 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Entrega
+                              span 24 de noviembre
+                          .col-md-3
+                            .time
+                              div
+                                span Conclusión
+                              span 25 de noviembre
+                .extra-options
+              .summary
+                .summary-tasks
+                  span 10 tareas
+                .summary-body
+                  span.summary-column
+                    span.summary-label Costo por hora:
+                    span $ 200.00
+                  span.summary-column
+                    span.summary-label Horas registradas:
+                    span 00:15
+                  span.summary-column
+                    span.summary-label Total:
+                    span $ 50.00
+                  span.summary-column
+                    span.summary-label Porcentaje del tiempo:
+                    span 20.00%
+    // build:js(.) scripts/vendor.js
+    // bower:js
+    // endbower
+    // endbuild
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    // build:js({app,.tmp}) scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
